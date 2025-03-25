@@ -88,6 +88,9 @@ module.exports.updateUserProfile = async serviceData => {
       throw new Error('User not found!')
     }
 
+    console.log("User profile updated successfully");
+    
+
     return user.toObject()
   } catch (error) {
     console.error('Error in userService.js', error)
